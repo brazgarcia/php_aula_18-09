@@ -11,7 +11,7 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container mt-2">
         <div class="row">
             <div class="col">
 
@@ -44,7 +44,7 @@
 
                         <div class="form-group">
                             <label for="email">Digite um email:</label>
-                            <input type="email" name="email" id="email" class="form-control">
+                            <input type="email" name="email" id="email" class="form-control" required>
                         </div>
 
                         <div class="form-group">
@@ -61,6 +61,35 @@
                   </div>
 
             </div>
+
+
+            <div class="col">
+                <form action="post.php" method="post">
+                    <div class="card"> 
+                        <div class="card-body">
+                            <h5 class="card-title">Formulário com POST</h5>
+                            <p class="card-text">
+                                Quando utilizamos Post, os dados enviados pelo formulário ficam ocultos ao usuário, aparecendo apenas na inspeção da página (f12), indo na aba network e clicando sobre o php para onde doi enviado.
+                            </p>
+
+                            <div class="form-group">
+                                <label for="usuario">Digite o usuario</label>
+                                <input type="text" name="usuario" id="usuario" class="form-control" placeholder="Digite oseu usuario ou email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senha">Digite a sua senha:</label>
+                                <input type="password" name="senha" id="senha" class="form-control" placeholder="Digite sua senha" minlength="6" required>
+                            </div>
+
+                            <button type="reset" class="btn btn-warning">Limpar</button>
+                            <button type="submit" class="btn btn-success">Entrar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
         </div>
 
     </div>
